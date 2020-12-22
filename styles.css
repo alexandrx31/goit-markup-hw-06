@@ -785,6 +785,7 @@ footer a {
 }
 
 .modal-svg {
+  pointer-events: none;
   position: absolute;
   top: 29px;
   left: 12px;
@@ -863,8 +864,11 @@ textarea::placeholder {
   font-weight: 400;
 
   letter-spacing: 0.03em;
+  position: relative;
 }
-.icon {
+
+.label-form-checkbox::before {
+  content: '';
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -884,7 +888,7 @@ textarea::placeholder {
   position: absolute;
 }
 
-.check-box:checked + .icon {
+.check-box:checked + .label-form-checkbox::before {
   background-color: var(--accent-color);
   background-image: url(./img/icon/check.svg);
   background-size: contain;

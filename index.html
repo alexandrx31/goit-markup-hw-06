@@ -382,7 +382,7 @@
         </div>
         <div class="subscribe">
             <p>Подпишитесь на рассылку</p>
-            <form action="">
+            <form action="subscribe">
                 <input type="email" name="email" placeholder="E-mail">
                 <button class="">Подписаться
                     <svg width="24px" height="24px">
@@ -405,7 +405,7 @@
         </button>
 
         <h2>Оставьте свои данные, мы вам перезвоним</h2>
-        <form action="" class="form">
+        <form action="contact" class="form">
             <label class="label-form">
                 <span>Имя</span>
                 <input type="text" name="name" class="input-form">
@@ -428,11 +428,10 @@
                 </svg>
             </label>
             <span>Комментарий</span>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            <textarea name="mesage" cols="30" rows="10" placeholder="Введите текст"></textarea>
             
-            <label class="label-form-checkbox">
-                <input type="checkbox" name="topic" class="check-box" />
-                <span class="icon"></span>
+            <input id="agree" type="checkbox" name="topic" class="check-box" />
+            <label class="label-form-checkbox" for="agree">
                 <span class="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
             </label>
 
